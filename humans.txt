@@ -5,16 +5,19 @@ exclude: 'yes'
 ---
 
 /* TEAM */
+Developer: Nicolas Badoux
+						
+/* THANKS */
 Developer & Designer: Josh Gerdes
 Twitter: @joshgerdes
 Site: http://joshgerdes.com
 Location: Minneapolis, MN, USA
-						
-/* THANKS */
+Name: Julien Lamour
+Site: julienlamour.com
 Name: Dale Anthony
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: VIM, Archlinux

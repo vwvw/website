@@ -1220,7 +1220,7 @@ hr {
 .panel-cover--overlay {
 	display: block;
 	position: absolute;
-	z-index: 0;
+	z-index: -10;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1375,7 +1375,7 @@ nav {
 
 .navigation__item {
 	display: inline-block;
-	margin: 0 2px 0 0;
+	margin: 0 5px 0 0;
 	line-height: 1em; }
 	.navigation__item a {
 		display: block;
@@ -1389,7 +1389,7 @@ nav {
 			opacity: 1; }
 
 .navigation--social {
-	margin-left: 1.5em; }
+	margin-left: 5px; }
 	.navigation--social a {
 		padding: 6px 8px 6px 9px; }
 		.navigation--social a .label {
@@ -1557,6 +1557,24 @@ input[type="tel"] {
 	input[type="tel"]:-ms-input-placeholder {
 		color: #cccccc; }
 
+.github-corner {
+    display: block;
+
+    &:hover .octo-arm{
+        animation: octocat-wave 560ms ease-in-out }
+    }
+
+@keyframes octocat-wave {
+  0%,100% {
+    transform: rotate(0) }
+
+  20%,60% {
+    transform: rotate(-25deg) }
+
+  40%,80% {
+    transform: rotate(10deg) }
+}
+
 @media all and (min-width: 1300px) {
 	.content-wrapper {
 		margin-left: 530px; } }
@@ -1581,6 +1599,10 @@ input[type="tel"] {
 	.btn-mobile-menu {
 		display: block; }
 
+    .github-corner {
+        display: none
+    }
+    
 	.panel-main {
 		display: table;
 		position: relative; }
@@ -1646,7 +1668,7 @@ input[type="tel"] {
 			display: block;
 			width: 100%; }
 			.cover-navigation .navigation li {
-				width: 80%;
+				width: 40%;
 				margin-bottom: .4em; }
 		.cover-navigation.navigation--social {
 			padding-top: 5px; }

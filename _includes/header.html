@@ -5,7 +5,6 @@
 
 <header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
@@ -19,13 +18,36 @@
         <div class="navigation-wrapper">
 
           <nav class="cover-navigation cover-navigation--primary">
+            <span>
             <ul class="navigation">
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#about-me" title="link to {{ site.title }} about-me" class="about-button">About me</a></li>
               <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
+            </span>
           </nav>
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.github_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
 
             {% if site.author.twitter_username %}
               <!-- Twitter -->
@@ -57,34 +79,24 @@
               </li>
             {% endif %}
 
-            {% if site.author.github_username %}
-              <!-- GitHub -->
+            {% if site.author.stackoverflow_id %}
+              <!-- Stack Overflow -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
+                <a href="https://stackoverflow.com/users//{{ site.author.stackoverflow_id }}?tab=profile" title="{{ site.author.stackoverflow_id }} on Stack Overflow" target="_blank">
+                  <i class="icon icon-social-stack-overflow"></i>
+                  <span class="label">Stack Overflow</span>
                 </a>
               </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
-
-            <!-- RSS -->
+<!--           RSS 
             <li class="navigation__item">
               <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
                 <i class="icon icon-rss"></i>
                 <span class="label">RSS</span>
               </a>
             </li>
-
+            -->
             </ul>
           </nav>
 
@@ -97,3 +109,4 @@
     <div class="panel-cover--overlay"></div>
   </div>
 </header>
+    {% include github-corner.html %}
