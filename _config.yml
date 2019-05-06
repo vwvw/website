@@ -1,10 +1,10 @@
 # Site settings
 title: Nicolas Badoux
-description: 'Nicolas Badoux personal website'
+description: 'Secruity engineer & outdoor enthusiast'
 url: 'https://nicolasbadoux.com'
 baseurl: ''
 repo: https://github.com/vwvw/website
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: ' UA-57362052-1'
 
 author:
   name: 'Nicolas Badoux'

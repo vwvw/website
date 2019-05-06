@@ -79,8 +79,9 @@
               </li>
             {% endif %}
 
+<!--            
             {% if site.author.stackoverflow_id %}
-              <!-- Stack Overflow -->
+              Stack Overflow 
               <li class="navigation__item">
                 <a href="https://stackoverflow.com/users//{{ site.author.stackoverflow_id }}?tab=profile" title="{{ site.author.stackoverflow_id }} on Stack Overflow" target="_blank">
                   <i class="icon icon-social-stack-overflow"></i>
@@ -89,7 +90,7 @@
               </li>
             {% endif %}
 
-<!--           RSS 
+i           RSS
             <li class="navigation__item">
               <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
                 <i class="icon icon-rss"></i>
@@ -109,4 +110,4 @@
     <div class="panel-cover--overlay"></div>
   </div>
 </header>
-    {% include github-corner.html %}
+{% include github-corner.html %}
