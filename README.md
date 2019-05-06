@@ -1,21 +1,11 @@
-# jekyll-uno
+# Nicolas Badoux website
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Based on Jekyll-Uno - a minimal, responsive theme for Jekyll inspired from the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
 > :warning:
   This theme requires ruby and rubygems installed
 
-### Features
-
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+Thanks to [https://julienlamour.com](Julien Lamour) for the background picture.
 
 ---
 
@@ -33,10 +23,8 @@ Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno
 
 ### Demo and Download
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+![Nicolas Badoux website theme](/screenshot.png)
 
 ---
 
