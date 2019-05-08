@@ -13,6 +13,7 @@ Created by Jordan Humphreys with FontForge 2.0 (http://fontforge.sf.net)
 <font id="fontcustom" horiz-adv-x="369" >
   <font-face 
     font-family="fontcustom"
+    font-display="auto"
     font-weight="500"
     font-stretch="normal"
     units-per-em="512"
