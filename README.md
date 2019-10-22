@@ -5,7 +5,7 @@ Based on Jekyll-Uno - a minimal, responsive theme for Jekyll inspired from the [
 > :warning:
   This theme requires ruby and rubygems installed
 
-Thanks to [https://julienlamour.com](Julien Lamour) for the background picture.
+Thanks to [Julien Lamour](https://julienlamour.com) for the background picture.
 
 ---
 
