@@ -41,6 +41,16 @@
                 </a>
               </li>
             {% endif %}
+            
+            {% if site.author.resume %}
+              <!-- Resume -->
+              <li class="navigation__item">
+                <a href="/resume_Nicolas_Badoux.pdf" title="Resume of {{ site.author.name }}" target="_blank">
+                  <i class="icon icon-address-book"></i>
+                  <span class="label">Resume</span>
+                </a>
+              </li>
+            {% endif %}
 
             {% if site.author.github_username %}
               <!-- GitHub -->
